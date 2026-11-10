@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventHub - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">EventHub</a>
+      <div class="nav-links" id="navLinks"></div>
+      <span id="userGreeting"></span>
+    </div>
+  </nav>
+
+  <div class="container section">
+    <h2 class="section-title">Dashboard</h2>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-number" id="createdCount">0</div>
+        <div class="stat-label">Events Created</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" id="registeredCount">0</div>
+        <div class="stat-label">Events Registered For</div>
+      </div>
+    </div>
+
+    <div class="card-actions" style="margin-bottom: 24px;">
+      <a href="create-event.html" class="btn btn-primary">+ Create New Event</a>
+      <a href="my-events.html" class="btn btn-outline">View My Registrations</a>
+    </div>
+
+    <h3 class="section-title">Events I Created</h3>
+    <div class="event-grid" id="myCreatedEvents">
+      <p class="empty-state">Loading your events...</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

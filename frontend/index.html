@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventHub - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">EventHub</a>
+      <div class="nav-links" id="navLinks">
+        <!-- Filled in automatically by main.js -->
+      </div>
+      <span id="userGreeting"></span>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Discover and Host Amazing Events</h1>
+      <p>Find events near you, or create your own in just a few clicks.</p>
+      <a href="events.html" class="btn btn-primary">Browse Events</a>
+    </div>
+  </section>
+
+  <!-- ===== Featured Events ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Latest Events</h2>
+      <div class="event-grid" id="featuredEvents">
+        <p class="empty-state">Loading events...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>EventHub &mdash; A beginner-friendly Event Management System.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

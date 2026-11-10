@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventHub - Create Event</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">EventHub</a>
+      <div class="nav-links" id="navLinks"></div>
+      <span id="userGreeting"></span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-wrapper card" style="max-width: 560px;">
+      <h2 id="formTitle">Create a New Event</h2>
+
+      <div id="messageBox" class="message"></div>
+
+      <form id="eventForm">
+        <div class="form-group">
+          <label for="title">Event Title</label>
+          <input type="text" id="title" placeholder="e.g. Community Music Night" />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="What is this event about?"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="e.g. City Community Hall" />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="Tech">Tech</option>
+              <option value="Music">Music</option>
+              <option value="Sports">Sports</option>
+              <option value="Business">Business</option>
+              <option value="Education">Education</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="total_seats">Total Seats</label>
+            <input type="number" id="total_seats" min="1" placeholder="e.g. 50" />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Create Event</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>
