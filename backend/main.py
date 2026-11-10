@@ -23,13 +23,15 @@ app = FastAPI(
 # a different "origin" than our backend (FastAPI server), the browser
 # will block requests unless we explicitly allow them here.
 # For this beginner project, we allow all origins to keep things simple.
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://sage-malabi-1725bd.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # -----------------------------
 # Include Routers
